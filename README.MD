@@ -17,7 +17,7 @@ Proje anadizininde (.sln dosyasının bulunduğu dizinde) aşağıdaki komut yü
 dotnet test --collect:"XPlat Code Coverage"
 ```
 
-Bu kod sonucunda **Experiment.Tests** projesi klasörü altında **TestResults** klasörü ve bu klasörün altında söz konusu yürütmenin sonucunu barındıran (GUID olarak adlandırılmış) bir başka klasör oluşacaktır. Her bir yürütme yeni bir rapor dolayısıyla bu raporu barındıracak TestResults altında yeni bir klasör oluşturacaktır.
+Bu komut sonucunda **Experiment.Tests** projesi altında **TestResults** klasörü ve bu klasörün altında söz konusu yürütmenin sonucunu barındıran (GUID olarak adlandırılmış) bir başka klasör oluşacaktır. Her bir yürütme yeni bir rapor dolayısıyla bu raporu barındıracak TestResults altında yeni bir klasör oluşturacaktır.
 
 ## Extra: Coverage Raporunu Okunabilir Hale Getirmek
 Coverage raporunu **reportgenerator** aracını kullanarak HTML'e çevirmek suretiyle daha kolay okunabilir hale getirebiliriz. 
@@ -40,7 +40,7 @@ reportgenerator "-reports:coverage.cobertura.xml" "-targetdir:./report"
 ## Request Örnekleri
 Discount değerini döndürecek olan endpoint, GUID tipinde invoiceId alacak şekilde tasarlanmıştır.
 
-Hangi GUID için sonuç dönüleceği FakeUserRepository ve FakeInvoiceRepository incelenerek görülebilir.
+Hangi GUID için hangi sonucun dönüleceği FakeUserRepository ve FakeInvoiceRepository incelenerek görülebilir.
 
 Aşağıda değişik tipteki kullanıcılar için örnek request şekilleri belirtilmiştir:
 
